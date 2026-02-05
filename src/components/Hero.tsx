@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-6 md:mb-8 animate-float shadow-lg shadow-violet-500/10">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-[10px] border border-white/5 mb-6 md:mb-8 animate-float shadow-lg shadow-violet-500/10">
           <Sparkles className="w-4 h-4 text-yellow-400" />
           <span className="text-xs md:text-sm font-medium text-gray-200">La agencia digital del futuro</span>
         </div>
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
           
           <a 
             href="#contact"
-            className="px-8 py-4 glass-panel text-white font-bold text-lg rounded-full hover:bg-white/10 transition-all w-full sm:w-auto border border-white/20 hover:border-white/40"
+            className="px-8 py-4 bg-white/5 backdrop-blur-[10px] text-white font-bold text-lg rounded-full hover:bg-white/10 transition-all w-full sm:w-auto border border-white/20 hover:border-white/40"
           >
             Agendar Reunión
           </a>

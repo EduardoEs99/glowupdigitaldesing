@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {TESTIMONIALS.map((t) => (
-            <div key={t.id} className="glass-panel p-6 md:p-8 rounded-2xl relative hover:bg-white/5 transition-colors group">
+            <div key={t.id} className="bg-white/5 backdrop-blur-[10px] border border-white/5 p-6 md:p-8 rounded-2xl relative hover:bg-white/10 transition-colors group">
               <Quote className="absolute top-6 right-6 text-white/5 group-hover:text-white/10 transition-colors w-10 h-10 md:w-12 md:h-12" />
               <p className="text-gray-300 mb-6 italic text-sm md:text-base leading-relaxed">
                 "{t.content}"

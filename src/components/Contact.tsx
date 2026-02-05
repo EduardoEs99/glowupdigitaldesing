@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
   return (
     <footer id="contact" className="pt-20 md:pt-24 pb-8 bg-surface relative overflow-hidden">
         {/* Glow effect for footer */}
-        <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-violet-900/20 to-transparent pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-full h-full bg-linear-to-t from-violet-900/20 to-transparent pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16 md:mb-20">
@@ -50,20 +50,33 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start gap-4 mt-10">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-violet-600 transition-all hover:-translate-y-1 text-white">
-                <Instagram size={18} />
+              <a
+                href="#"
+                className="
+                  w-10 h-10 rounded-full
+                  bg-white/5
+                  flex items-center justify-center
+                  text-white
+
+                  hover:-translate-y-1
+                  transition-transform
+
+                  hover:bg-[linear-gradient(180deg,#405de6_0%,#5851db_12%,#833ab4_25%,#c13584_40%,#e1306c_55%,#fd1d1d_70%,#f56040_82%,#f77737_90%,#fcaf45_96%,#ffdc80_100%)]
+                "
+              >
+                <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 transition-all hover:-translate-y-1 text-white">
-                <Linkedin size={18} />
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#0A66C2] transition-all hover:-translate-y-1 text-white">
+                <Linkedin size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-500 transition-all hover:-translate-y-1 text-white">
-                <Facebook size={18} />
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#1778F2] transition-all hover:-translate-y-1 text-white">
+                <Facebook size={20} />
               </a>
             </div>
           </div>
 
           {/* Form */}
-          <div className="order-1 lg:order-2 glass-panel p-6 md:p-8 rounded-3xl border border-white/10 shadow-2xl shadow-violet-900/10">
+          <div className="order-1 lg:order-2 bg-white/5 backdrop-blur-[10px] p-6 md:p-8 rounded-3xl border border-white/10 shadow-2xl shadow-violet-900/10">
             <form className="space-y-4 md:space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div className="space-y-2">
@@ -86,7 +99,7 @@ const Contact: React.FC = () => {
                 <textarea rows={4} className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all resize-none text-sm" placeholder="Cuéntanos tu idea..."></textarea>
               </div>
 
-              <button className="w-full bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold py-3 md:py-4 rounded-xl hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] transition-all hover:scale-[1.02] active:scale-[0.98] text-sm md:text-base">
+              <button className="w-full bg-linear-to-r from-violet-600 to-fuchsia-600 text-white font-bold py-3 md:py-4 rounded-xl hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] transition-all hover:scale-[1.02] active:scale-[0.98] text-sm md:text-base">
                 Enviar Mensaje
               </button>
             </form>

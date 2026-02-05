@@ -46,14 +46,14 @@ const Navbar: React.FC = () => {
             <a 
               key={item.label} 
               href={item.href}
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-fuchsia-500 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full"
+              className="text-md font-medium text-gray-300 hover:text-white transition-colors relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-fuchsia-500 after:left-0 after:-bottom-1 after:transition-all hover:after:w-full"
             >
               {item.label}
             </a>
           ))}
           <a 
             href="#contact"
-            className="bg-white text-black px-6 py-2.5 rounded-full text-sm font-bold hover:bg-gray-100 transition-all hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+            className="bg-white text-black px-6 py-2.5 rounded-full text-md font-bold hover:bg-gray-100 transition-all hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
           >
             Hablemos
           </a>
