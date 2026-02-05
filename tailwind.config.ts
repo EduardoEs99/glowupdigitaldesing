@@ -20,6 +20,7 @@ export default {
       animation: {
         blob: 'blob 7s infinite',
         float: 'float 6s ease-in-out infinite',
+        'icon-wiggle': 'iconWiggle 0.8s ease-in-out infinite',
       },
       keyframes: {
         blob: {
@@ -31,6 +32,13 @@ export default {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-20px)' },
+        },
+        iconWiggle: {
+          '0%': { transform: 'translateY(0) rotate(0deg)' },
+          '25%': { transform: 'translateY(-2px) rotate(-8deg)' },
+          '50%': { transform: 'translateY(0) rotate(0deg)' },
+          '75%': { transform: 'translateY(-2px) rotate(8deg)' },
+          '100%': { transform: 'translateY(0) rotate(0deg)' },
         },
       },
     },
