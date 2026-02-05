@@ -15,16 +15,11 @@ body
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: linear-gradient(to bottom, #d946ef, #8b5cf6);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-.glass-panel {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to bottom, #b517c6, #6d28d9);
 }
 .text-gradient {
   background: linear-gradient(to right, #8b5cf6, #d946ef);
