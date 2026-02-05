@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# GlowUp Digital — Plantilla Web para Agencia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una landing moderna y llamativa pensada para agencias de marketing y estudios creativos. Incluye secciones clave para presentar servicios, propuesta de valor y llamado a la acción. Esta plantilla es **de libre uso** para proyectos personales y comerciales.
 
-Currently, two official plugins are available:
+## Vista previa
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Hero](/public/preview-hero.png)
+![Servicios](/public/preview-services.png)
+![CTA](/public/preview-cta.png)
 
-## React Compiler
+> Tip: reemplaza las imágenes por capturas reales de tu proyecto.  
+> Guardalas en `public/` con los nombres indicados arriba.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Características principales
 
-## Expanding the ESLint configuration
+- Diseño oscuro premium con gradientes y brillos sutiles
+- Sección de servicios con cards y microinteracciones
+- Navegación fija con menú móvil a pantalla completa
+- Tipografía y jerarquía visual para alta conversión
+- Animaciones suaves optimizadas para móvil y desktop
+- Estructura lista para personalizar textos y branding
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Ideal para
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Agencias de marketing digital
+- Estudios creativos y de diseño
+- Freelancers y consultores
+- Portfolios de servicios
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tecnologías
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React + TypeScript
+- Vite
+- Tailwind CSS
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Estructura de secciones
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Hero con CTA
+- Servicios
+- Beneficios / Valor
+- Contacto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Cómo personalizar
+
+- Textos y data: `src/constants.ts`
+- Estilos globales: `src/index.css`
+- Componentes principales: `src/components/`
+
+## Licencia
+
+Uso libre. Podés usarla, modificarla y adaptarla para proyectos comerciales o personales.
