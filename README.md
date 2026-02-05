@@ -8,8 +8,6 @@ Una landing moderna y llamativa pensada para agencias de marketing y estudios cr
 ![Servicios](/public/preview-services.png)
 ![CTA](/public/preview-cta.png)
 
-> Tip: reemplaza las imágenes por capturas reales de tu proyecto.  
-> Guardalas en `public/` con los nombres indicados arriba.
 
 ## Características principales
 
